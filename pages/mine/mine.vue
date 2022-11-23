@@ -31,14 +31,14 @@
             </view>
             <view class="tn-padding-right">
               <view class="tn-padding-right tn-padding-left-sm">
-                <text class="tn-color-cat tn-text-xl tn-text-bold">徐清风</text>
+                <text class="tn-color-cat tn-text-xl tn-text-bold">清风</text>
                 <!-- <text class=" tn-round tn-text-xs tn-bg-red tn-color-white tn-margin-left-sm" style="padding: 10rpx 20rpx;" @click="tn('/minePages/realname')">
                   未实名
                 </text> -->
               </view>
               <view class="tn-padding-right tn-padding-top-xs tn-padding-left-sm tn-text-ellipsis">
-                <text class="tn-color-gray">信息科技与工程学院</text>
-                <text class="tn-color-gray tn-padding-left-sm tn-text-sm">150****2054</text>
+                <text class="tn-color-gray">信息科学与工程学院</text>
+                <text class="tn-color-gray tn-padding-left-sm tn-text-sm">2020级</text>
               </view>
             </view>
 
@@ -51,10 +51,10 @@
       </view>
       
       <!-- 没有授权，则显示这个授权按钮-->
-      <view class="tn-flex tn-flex-row-between" @click="tn('/minePages/login')">
+      <view class="tn-flex tn-flex-row-between" @click="tn('/uni_modules/uni-id-pages/pages/login/login-withoutpwd')">
         <view class="tn-flex-1 justify-content-item tn-margin-xs tn-text-center">
           <tn-button shape="round" backgroundColor="#1D2541" fontColor="#ffffff" padding="20rpx 0" width="40%" shadow>
-            <text class="tn-icon-wechat tn-padding-right-xs tn-text-xl"></text>
+            <text class="tn-icon-phone tn-padding-right-xs tn-text-xl"></text>
             <text class="">授权登录</text>
           </tn-button>
         </view>
@@ -151,6 +151,9 @@
       return {
       }
     },
+	created() {
+		
+	},
     methods: {
       // 跳转
       tn(e) {
@@ -164,6 +167,7 @@
           phoneNumber: "18888888888",
         });
       },
+	  
     }
   }
 </script>

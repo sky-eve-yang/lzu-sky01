@@ -1,6 +1,7 @@
 <!-- 免密登录页 -->
 <template>
 	<view class="uni-content">
+		<view style="width: 100%;height: 200rpx;"></view>
 		<view class="login-logo">
 			<image :src="logo"></image>
 		</view>

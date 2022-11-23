@@ -87,89 +87,6 @@
     </view>
     
     
-    <!-- 4 信息展示 -->
-    <view class="tn-padding-bottom-lg">
-      <view class="tn-flex tn-flex-row-between" @click="tn('')">
-        <view class="justify-content-item tn-margin tn-text-bold tn-text-xxl">
-          精选动态
-        </view> 
-        <view class="justify-content-item tn-margin tn-text-lg tn-color-cat">
-          <text class="tn-padding-xs">全部</text>
-          <text class="tn-icon-topics"></text>
-        </view>
-      </view>
-      
-      <view class="tn-flex tn-margin-left tn-margin-right tn-margin-top-sm">
-        <view class="tn-flex-2"> 
-          <view class="image-pic tn-margin-right" style="background-image:url('https://tnuiimage.tnkjapp.com/simple/image1.jpg')" @click="tn('')">
-            <view class="image-tuniao1">
-            </view>
-          </view> 
-        </view>
-        <view class="tn-flex-1">
-          <view class="image-pic" style="background-image:url('https://tnuiimage.tnkjapp.com/simple/image5.jpg')" @click="tn('')">
-            <view class="image-tuniao2">
-            </view>
-          </view> 
-          <view class="image-pic tn-margin-top" style="background-image:url('https://tnuiimage.tnkjapp.com/simple/banner1.jpg')" @click="tn('')">
-            <view class="image-tuniao2">
-            </view>
-          </view> 
-        </view>
-      </view>
-      
-      
-      <view class="tn-flex tn-flex-row-between tn-margin-top" @click="tn('')">
-        <view class="justify-content-item tn-margin tn-text-bold tn-text-xxl">
-          商圈活动
-        </view>
-        <view class="justify-content-item tn-margin tn-text-lg tn-color-cat">
-          <text class="tn-padding-xs">全部</text>
-          <text class="tn-icon-topics"></text>
-        </view>
-      </view>
-      
-      <!-- 图文 -->
-      <view class="tn-flex tn-flex-direction-column">
-        
-        <block v-for="(item,index) in content" :key="index">
-          <view class="tn-blogger-content__wrap" @click="tn('')">
-            <view class="">
-              <image 
-                class="tn-blogger-content__main-image tn-blogger-content__main-image--1 tn-margin-bottom-xs"
-                :src="item.mainImage"
-                mode="aspectFill"
-              ></image>
-            </view>
-            <view class="tn-blogger-content__label tn-text-justify">
-              <text class="tn-blogger-content__label__desc tn-text-lg tn-text-bold tn-color-cat">{{ item.desc }}</text>  
-            </view>
-            
-            <view class="tn-flex tn-flex-row-between tn-flex-col-center tn-margin-top-xs">
-              <view class="justify-content-item tn-flex tn-flex-col-center">
-                <view style="margin-right: 10rpx;margin-left: 0rpx;">
-                  <view class="tn-color-gray">
-                    <text class="tn-blogger-content__count-icon tn-icon-flower"></text> 
-                    <text class="tn-padding-right">{{ item.collectionCount }}</text>
-                    <text class="tn-blogger-content__count-icon tn-icon-message"></text>
-                    <text class="tn-padding-right">{{ item.commentCount }}</text>
-                    <text class="tn-blogger-content__count-icon tn-icon-like"></text>
-                    <text class="">{{ item.likeCount }}</text>
-                  </view>
-                </view>
-              </view>
-              <view class="justify-content-item tn-text-center">
-                <view v-for="(label_item,label_index) in item.label" :key="label_index" class="tn-blogger-content__label__item tn-float-left">
-                  <text class="tn-blogger-content__label__item--prefix tn-icon-topics-fill"></text> {{ label_item }}
-                </view>
-              </view>
-            </view>
-          </view>
-          
-        </block>
-      </view>
-      
-    </view>
 
     <view class='tn-tabbar-height'></view>
     
@@ -187,19 +104,19 @@
           id: 0,
           type: 'image',
           title: '同学情',
-          name: '更多彩蛋等你探索',
+          name: '找寻身边的同学情',
           url: 'https://tnuiimage.tnkjapp.com/simple/banner2.jpg',
         }, {
           id: 1,
           type: 'image',
           title: '兰大情',
-          name: '作者微信 tnkewo',
+          name: '找寻身边的兰大情',
           url: 'https://tnuiimage.tnkjapp.com/simple/image3.jpg',
         }, {
           id: 2,
           type: 'image',
           title: '师生情',
-          name: '总有你想不到的创意',
+          name: '找寻身边的师生情',
           url: 'https://tnuiimage.tnkjapp.com/simple/image2.jpg',
         }, {
           id: 3,
@@ -208,168 +125,6 @@
           name: '更多彩蛋等你探索',
           url: 'https://tnuiimage.tnkjapp.com/simple/banner0.jpg',
         }],
-        content: [
-          {
-            userAvatar: 'https://tnuiimage.tnkjapp.com/blogger/avatar_1.jpeg',
-            userName: '可我会像',
-            date: '2021年12月20日',
-            label: ['开源','创意'],
-            desc: '免费开源可商用组件',
-            mainImage: 'https://tnuiimage.tnkjapp.com/simple/image4.jpg',
-            viewUser: {
-              latestUserAvatar: [
-                {src: 'https://tnuiimage.tnkjapp.com/blogger/avatar_1.jpeg'},
-                {src: 'https://tnuiimage.tnkjapp.com/blogger/avatar_2.jpeg'},
-                {src: 'https://tnuiimage.tnkjapp.com/blogger/avatar_3.jpeg'},
-                {src: 'https://tnuiimage.tnkjapp.com/blogger/avatar_4.jpeg'},
-              ],
-              viewUserCount: 129
-            },
-            collectionCount: 236,
-            commentCount: 102,
-            likeCount: 168
-          },
-          {
-            userAvatar: 'https://tnuiimage.tnkjapp.com/blogger/avatar_1.jpeg',
-            userName: '可我会像',
-            date: '2021年12月20日',
-            label: ['开源','创意'],
-            desc: '2023年祝福接力',
-            mainImage: 'https://tnuiimage.tnkjapp.com/simple/image0.jpg',
-            viewUser: {
-              latestUserAvatar: [
-                {src: 'https://tnuiimage.tnkjapp.com/blogger/avatar_1.jpeg'},
-                {src: 'https://tnuiimage.tnkjapp.com/blogger/avatar_2.jpeg'},
-                {src: 'https://tnuiimage.tnkjapp.com/blogger/avatar_3.jpeg'},
-                {src: 'https://tnuiimage.tnkjapp.com/blogger/avatar_4.jpeg'},
-              ],
-              viewUserCount: 129
-            },
-            collectionCount: 265,
-            commentCount: 22,
-            likeCount: 62
-          },
-          {
-            userAvatar: 'https://tnuiimage.tnkjapp.com/blogger/avatar_1.jpeg',
-            userName: '可我会像',
-            date: '2021年12月20日',
-            label: ['开源','创意'],
-            desc: '寄给十年后的自己',
-            mainImage: 'https://tnuiimage.tnkjapp.com/simple/image1.jpg',
-            viewUser: {
-              latestUserAvatar: [
-                {src: 'https://tnuiimage.tnkjapp.com/blogger/avatar_1.jpeg'},
-                {src: 'https://tnuiimage.tnkjapp.com/blogger/avatar_2.jpeg'},
-                {src: 'https://tnuiimage.tnkjapp.com/blogger/avatar_3.jpeg'},
-                {src: 'https://tnuiimage.tnkjapp.com/blogger/avatar_4.jpeg'},
-              ],
-              viewUserCount: 129
-            },
-            collectionCount: 265,
-            commentCount: 22,
-            likeCount: 62
-          },
-          {
-            userAvatar: 'https://tnuiimage.tnkjapp.com/blogger/avatar_1.jpeg',
-            userName: '可我会像',
-            date: '2021年12月20日',
-            label: ['开源','创意'],
-            desc: '我们结婚了',
-            mainImage: 'https://tnuiimage.tnkjapp.com/simple/image2.jpg',
-            viewUser: {
-              latestUserAvatar: [
-                {src: 'https://tnuiimage.tnkjapp.com/blogger/avatar_1.jpeg'},
-                {src: 'https://tnuiimage.tnkjapp.com/blogger/avatar_2.jpeg'},
-                {src: 'https://tnuiimage.tnkjapp.com/blogger/avatar_3.jpeg'},
-                {src: 'https://tnuiimage.tnkjapp.com/blogger/avatar_4.jpeg'},
-              ],
-              viewUserCount: 129
-            },
-            collectionCount: 265,
-            commentCount: 22,
-            likeCount: 62
-          },
-          {
-            userAvatar: 'https://tnuiimage.tnkjapp.com/blogger/avatar_1.jpeg',
-            userName: '可我会像',
-            date: '2021年12月20日',
-            label: ['开源','创意'],
-            desc: '免费开源可商用组件',
-            mainImage: 'https://tnuiimage.tnkjapp.com/simple/banner0.jpg',
-            viewUser: {
-              latestUserAvatar: [
-                {src: 'https://tnuiimage.tnkjapp.com/blogger/avatar_1.jpeg'},
-                {src: 'https://tnuiimage.tnkjapp.com/blogger/avatar_2.jpeg'},
-                {src: 'https://tnuiimage.tnkjapp.com/blogger/avatar_3.jpeg'},
-                {src: 'https://tnuiimage.tnkjapp.com/blogger/avatar_4.jpeg'},
-              ],
-              viewUserCount: 129
-            },
-            collectionCount: 265,
-            commentCount: 22,
-            likeCount: 62
-          },
-          {
-            userAvatar: 'https://tnuiimage.tnkjapp.com/blogger/avatar_1.jpeg',
-            userName: '可我会像',
-            date: '2021年12月20日',
-            label: ['开源','创意'],
-            desc: '我们都是好孩子',
-            mainImage: 'https://tnuiimage.tnkjapp.com/simple/banner2.jpg',
-            viewUser: {
-              latestUserAvatar: [
-                {src: 'https://tnuiimage.tnkjapp.com/blogger/avatar_1.jpeg'},
-                {src: 'https://tnuiimage.tnkjapp.com/blogger/avatar_2.jpeg'},
-                {src: 'https://tnuiimage.tnkjapp.com/blogger/avatar_3.jpeg'},
-                {src: 'https://tnuiimage.tnkjapp.com/blogger/avatar_4.jpeg'},
-              ],
-              viewUserCount: 129
-            },
-            collectionCount: 265,
-            commentCount: 22,
-            likeCount: 62
-          },
-          {
-            userAvatar: 'https://tnuiimage.tnkjapp.com/blogger/avatar_1.jpeg',
-            userName: '可我会像',
-            date: '2021年12月20日',
-            label: ['开源','创意'],
-            desc: '免费开源可商用组件',
-            mainImage: 'https://tnuiimage.tnkjapp.com/simple/banner1.jpg',
-            viewUser: {
-              latestUserAvatar: [
-                {src: 'https://tnuiimage.tnkjapp.com/blogger/avatar_1.jpeg'},
-                {src: 'https://tnuiimage.tnkjapp.com/blogger/avatar_2.jpeg'},
-                {src: 'https://tnuiimage.tnkjapp.com/blogger/avatar_3.jpeg'},
-                {src: 'https://tnuiimage.tnkjapp.com/blogger/avatar_4.jpeg'},
-              ],
-              viewUserCount: 129
-            },
-            collectionCount: 265,
-            commentCount: 22,
-            likeCount: 62
-          },
-          {
-            userAvatar: 'https://tnuiimage.tnkjapp.com/blogger/avatar_1.jpeg',
-            userName: '可我会像',
-            date: '2021年12月20日',
-            label: ['开源','创意'],
-            desc: '免费开源可商用组件',
-            mainImage: 'https://tnuiimage.tnkjapp.com/simple/image6.jpg',
-            viewUser: {
-              latestUserAvatar: [
-                {src: 'https://tnuiimage.tnkjapp.com/blogger/avatar_1.jpeg'},
-                {src: 'https://tnuiimage.tnkjapp.com/blogger/avatar_2.jpeg'},
-                {src: 'https://tnuiimage.tnkjapp.com/blogger/avatar_3.jpeg'},
-                {src: 'https://tnuiimage.tnkjapp.com/blogger/avatar_4.jpeg'},
-              ],
-              viewUserCount: 129
-            },
-            collectionCount: 265,
-            commentCount: 22,
-            likeCount: 62
-          }
-        ]
       }
     },
     created() {

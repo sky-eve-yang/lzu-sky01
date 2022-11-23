@@ -1,8 +1,8 @@
 {
 	"bsonType": "object",
 	"required": [],
-	"permission": {	
-		"read": true,
+	"permission": {
+		"read": false,
 		"create": false,
 		"update": false,
 		"delete": false

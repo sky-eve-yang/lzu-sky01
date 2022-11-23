@@ -1,0 +1,103 @@
+
+{
+  "passwordSecret": [
+    {
+      "value": "hmac-sha256",
+      "version": 1
+    }
+  ], 
+  "passwordStrength": "medium", 
+  "tokenSecret": "lzusky01sky-eve-yang", 
+  "tokenExpiresIn": 7200, 
+  "tokenExpiresThreshold": 3600, 
+  "passwordErrorLimit": 6, 
+  "passwordErrorRetryTime": 3600, 
+  "autoSetInviteCode": false, 
+  "forceInviteCode": false, 
+  "app": { 
+    "tokenExpiresIn": 2592000,
+    "tokenExpiresThreshold": 864000,
+    "oauth": {
+      
+      "weixin": {
+        "appid": "",
+        "appsecret": ""
+      },
+      
+      "qq": {
+        "appid": "",
+        "appsecret": ""
+      },
+      "apple": { 
+        "bundleId": ""
+      }
+    }
+  },
+  "web": { 
+    "tokenExpiresIn": 7200,
+    "tokenExpiresThreshold": 3600,
+    "oauth": {
+      "weixin-h5": { 
+        "appid": "",
+        "appsecret": ""
+      },
+      "weixin-web": { 
+        "appid": "",
+        "appsecret": ""
+      }
+    }
+  },
+  "mp-weixin": {
+    "tokenExpiresIn": 259200,
+    "tokenExpiresThreshold": 86400,
+    "oauth": {
+      
+      "weixin": {
+        "appid": "",
+        "appsecret": ""
+      }
+    }
+  },
+  "mp-qq": {
+    "tokenExpiresIn": 259200,
+    "tokenExpiresThreshold": 86400,
+    "oauth": {
+      
+      "qq": {
+        "appid": "",
+        "appsecret": ""
+      }
+    }
+  },
+  "mp-alipay": {
+    "tokenExpiresIn": 259200,
+    "tokenExpiresThreshold": 86400,
+    "oauth": {
+      
+      "alipay": {
+        "appid": "",
+        "privateKey": "", 
+        "keyType": "PKCS8" 
+      }
+    }
+  },
+  "service": {
+    "sms": {
+      "name": "tuniao-simple-circle_1.0.1", 
+      "codeExpiresIn": 60, 
+      "smsKey": "5bae2ab08ed65beff55b04f160ed39c8", 
+      "smsSecret": "61c8dd0309416e2341c7322b1629f65b", 
+      "scene": {
+        "bind-mobile-by-sms": { 
+          "templateId": "opendb-verify-codes", 
+          "codeExpiresIn": 240 
+        }
+      }
+    },
+    "univerify": {
+      "appid": "__UNI__BEAFFA2", 
+      "apiKey": "eb816bf711aeaf845d6e898142a5990e", 
+      "apiSecret": "1bb46f5207700b4e3ed60bb9e0afd18f"
+    }
+  }
+}

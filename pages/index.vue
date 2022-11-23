@@ -79,8 +79,8 @@
           },
           {
             title: '校友',
-            activeIcon: 'message-fill',
-            inactiveIcon: 'message',
+            activeIcon: 'team-fill',
+            inactiveIcon: 'team',
             count: 12
           },
           {
@@ -90,7 +90,7 @@
           }
         ],
         // tabbar当前被选中的序号
-        currentIndex: 0,
+        currentIndex: 0, 
         // 自定义底栏对应页面的加载情况
         tabberPageLoadFlag: []
       }
@@ -103,7 +103,17 @@
       })
       this.switchTabbar(index)
     },
+	onShow() {
+		this.getLoadStatue()
+	},
     methods: {
+		getLoadStatue() {
+			const db = uniCloud.database();
+			const usersTable = db.collection('uni-id-users').get().then((res)=> {
+				console.log(222,res);
+			})
+			console.log(1111,usersTable);
+		}, 
       // 切换导航
       switchTabbar(index) {
         this._switchTabbarPage(index)

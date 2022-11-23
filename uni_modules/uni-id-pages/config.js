@@ -19,12 +19,11 @@ export default {
 		// #ifdef APP
 		"univerify",
 		// #endif
-		"weixin",
-		"username",
+		// "smsCode",
 		// #ifdef APP
 		"apple",
 		// #endif
-		"smsCode"
+		"weixin"
 	],
 	//政策协议
 	"agreements": {
