@@ -1,0 +1,40 @@
+{
+    "teac-commu-time-data": {
+        "data": [
+            {
+                "date": "2022-09-22",
+                "link": "https://jwc.lzu.edu.cn/upload/doc/N20220925100521.xls",
+                "title": "兰州大学“教授开放日”安排表（第5周）"
+            }
+        ],
+        "index": [
+            {
+                "IndexName": "_date_",
+                "MgoKeySchema": {
+                    "MgoIndexKeys": [
+                        {
+                            "Name": "date",
+                            "Direction": "-1"
+                        }
+                    ],
+                    "MgoIsUnique": false
+                }
+            }
+        ],
+        "schema": {
+            "bsonType": "object",
+            "required": [],
+            "permission": {
+                "read": true,
+                "create": false,
+                "update": false,
+                "delete": false
+            },
+            "properties": {
+                "_id": {
+                    "description": "ID，系统自动生成"
+                }
+            }
+        }
+    }
+}
